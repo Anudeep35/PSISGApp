@@ -27,6 +27,12 @@
 		FB8B12AD2365D6FC0019F59D /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B12AC2365D6FC0019F59D /* UIViewController+Extension.swift */; };
 		FB8B12AF2365D77D0019F59D /* PSIAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B12AE2365D77D0019F59D /* PSIAnnotation.swift */; };
 		FB8B12B32365DC050019F59D /* PSIAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B12B22365DC050019F59D /* PSIAnnotationView.swift */; };
+		FB8B12B92365FC4D0019F59D /* PSITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B12B82365FC4D0019F59D /* PSITests.swift */; };
+		FB8B12BB2365FDEF0019F59D /* RegionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B12BA2365FDEF0019F59D /* RegionTests.swift */; };
+		FB8B12BD2365FE910019F59D /* PSIReadingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B12BC2365FE910019F59D /* PSIReadingTests.swift */; };
+		FB8B12BF236600680019F59D /* MapViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B12BE236600680019F59D /* MapViewModelTests.swift */; };
+		FB8B12C2236600BF0019F59D /* psi.json in Resources */ = {isa = PBXBuildFile; fileRef = FB8B12C1236600BE0019F59D /* psi.json */; };
+		FB8B12C4236602720019F59D /* PSIMapViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B12C3236602720019F59D /* PSIMapViewControllerSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +74,12 @@
 		FB8B12AC2365D6FC0019F59D /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		FB8B12AE2365D77D0019F59D /* PSIAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIAnnotation.swift; sourceTree = "<group>"; };
 		FB8B12B22365DC050019F59D /* PSIAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIAnnotationView.swift; sourceTree = "<group>"; };
+		FB8B12B82365FC4D0019F59D /* PSITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSITests.swift; sourceTree = "<group>"; };
+		FB8B12BA2365FDEF0019F59D /* RegionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionTests.swift; sourceTree = "<group>"; };
+		FB8B12BC2365FE910019F59D /* PSIReadingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIReadingTests.swift; sourceTree = "<group>"; };
+		FB8B12BE236600680019F59D /* MapViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModelTests.swift; sourceTree = "<group>"; };
+		FB8B12C1236600BE0019F59D /* psi.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = psi.json; sourceTree = "<group>"; };
+		FB8B12C3236602720019F59D /* PSIMapViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIMapViewControllerSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				FB8B12682365B18A0019F59D /* AppDelegate.swift */,
+				FB8B12C0236600B10019F59D /* StubResponses */,
 				FB8B12992365BCD70019F59D /* Extension */,
 				FB8B12892365B49C0019F59D /* APIManager */,
 				FB8B12882365B4830019F59D /* Modules */,
@@ -230,6 +243,7 @@
 		FB8B12912365B5E40019F59D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FB8B12C3236602720019F59D /* PSIMapViewControllerSpec.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -237,6 +251,7 @@
 		FB8B12922365B5F50019F59D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				FB8B12BE236600680019F59D /* MapViewModelTests.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -244,6 +259,9 @@
 		FB8B12932365B5FD0019F59D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FB8B12B82365FC4D0019F59D /* PSITests.swift */,
+				FB8B12BA2365FDEF0019F59D /* RegionTests.swift */,
+				FB8B12BC2365FE910019F59D /* PSIReadingTests.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -255,6 +273,14 @@
 				FB8B12AC2365D6FC0019F59D /* UIViewController+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		FB8B12C0236600B10019F59D /* StubResponses */ = {
+			isa = PBXGroup;
+			children = (
+				FB8B12C1236600BE0019F59D /* psi.json */,
+			);
+			path = StubResponses;
 			sourceTree = "<group>";
 		};
 		FDF88F8C83F936FCE8783C46 /* Pods */ = {
@@ -353,6 +379,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB8B12C2236600BF0019F59D /* psi.json in Resources */,
 				FB8B12732365B19F0019F59D /* LaunchScreen.storyboard in Resources */,
 				FB8B12702365B19F0019F59D /* Assets.xcassets in Resources */,
 				FB8B126E2365B18A0019F59D /* Main.storyboard in Resources */,
@@ -473,9 +500,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB8B12B92365FC4D0019F59D /* PSITests.swift in Sources */,
 				FB8B12A32365CF750019F59D /* APIServiceTests.swift in Sources */,
+				FB8B12BF236600680019F59D /* MapViewModelTests.swift in Sources */,
 				FB8B127E2365B19F0019F59D /* PSISGAppTests.swift in Sources */,
+				FB8B12BD2365FE910019F59D /* PSIReadingTests.swift in Sources */,
+				FB8B12C4236602720019F59D /* PSIMapViewControllerSpec.swift in Sources */,
 				FB8B129D2365C49E0019F59D /* RouterSpec.swift in Sources */,
+				FB8B12BB2365FDEF0019F59D /* RegionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
