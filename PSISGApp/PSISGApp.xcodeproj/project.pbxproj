@@ -20,6 +20,13 @@
 		FB8B129B2365BCF90019F59D /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B129A2365BCF90019F59D /* Date+Extension.swift */; };
 		FB8B129D2365C49E0019F59D /* RouterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B129C2365C49E0019F59D /* RouterSpec.swift */; };
 		FB8B12A32365CF750019F59D /* APIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B12A22365CF750019F59D /* APIServiceTests.swift */; };
+		FB8B12A52365D5640019F59D /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B12A42365D5640019F59D /* MapViewModel.swift */; };
+		FB8B12A72365D5D30019F59D /* PSI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B12A62365D5D30019F59D /* PSI.swift */; };
+		FB8B12A92365D5E60019F59D /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B12A82365D5E50019F59D /* Region.swift */; };
+		FB8B12AB2365D5F40019F59D /* PSIReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B12AA2365D5F40019F59D /* PSIReading.swift */; };
+		FB8B12AD2365D6FC0019F59D /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B12AC2365D6FC0019F59D /* UIViewController+Extension.swift */; };
+		FB8B12AF2365D77D0019F59D /* PSIAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B12AE2365D77D0019F59D /* PSIAnnotation.swift */; };
+		FB8B12B32365DC050019F59D /* PSIAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B12B22365DC050019F59D /* PSIAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +61,13 @@
 		FB8B129A2365BCF90019F59D /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		FB8B129C2365C49E0019F59D /* RouterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterSpec.swift; sourceTree = "<group>"; };
 		FB8B12A22365CF750019F59D /* APIServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceTests.swift; sourceTree = "<group>"; };
+		FB8B12A42365D5640019F59D /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		FB8B12A62365D5D30019F59D /* PSI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSI.swift; sourceTree = "<group>"; };
+		FB8B12A82365D5E50019F59D /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		FB8B12AA2365D5F40019F59D /* PSIReading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIReading.swift; sourceTree = "<group>"; };
+		FB8B12AC2365D6FC0019F59D /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		FB8B12AE2365D77D0019F59D /* PSIAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIAnnotation.swift; sourceTree = "<group>"; };
+		FB8B12B22365DC050019F59D /* PSIAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSIAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +186,7 @@
 		FB8B128C2365B4EC0019F59D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				FB8B12A42365D5640019F59D /* MapViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -188,6 +203,9 @@
 		FB8B128E2365B4FE0019F59D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FB8B12A62365D5D30019F59D /* PSI.swift */,
+				FB8B12A82365D5E50019F59D /* Region.swift */,
+				FB8B12AA2365D5F40019F59D /* PSIReading.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -203,6 +221,8 @@
 		FB8B12902365B5410019F59D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FB8B12AE2365D77D0019F59D /* PSIAnnotation.swift */,
+				FB8B12B22365DC050019F59D /* PSIAnnotationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -232,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				FB8B129A2365BCF90019F59D /* Date+Extension.swift */,
+				FB8B12AC2365D6FC0019F59D /* UIViewController+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -435,9 +456,16 @@
 			files = (
 				FB8B129B2365BCF90019F59D /* Date+Extension.swift in Sources */,
 				FB8B12982365BCA80019F59D /* Router.swift in Sources */,
+				FB8B12AB2365D5F40019F59D /* PSIReading.swift in Sources */,
+				FB8B12A72365D5D30019F59D /* PSI.swift in Sources */,
+				FB8B12B32365DC050019F59D /* PSIAnnotationView.swift in Sources */,
+				FB8B12A92365D5E60019F59D /* Region.swift in Sources */,
 				FB8B126B2365B18A0019F59D /* PSIMapViewController.swift in Sources */,
 				FB8B12952365BC8B0019F59D /* APIService.swift in Sources */,
 				FB8B12692365B18A0019F59D /* AppDelegate.swift in Sources */,
+				FB8B12AD2365D6FC0019F59D /* UIViewController+Extension.swift in Sources */,
+				FB8B12AF2365D77D0019F59D /* PSIAnnotation.swift in Sources */,
+				FB8B12A52365D5640019F59D /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
