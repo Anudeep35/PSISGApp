@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,11 @@
 		FB8B12702365B19F0019F59D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB8B126F2365B19F0019F59D /* Assets.xcassets */; };
 		FB8B12732365B19F0019F59D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB8B12712365B19F0019F59D /* LaunchScreen.storyboard */; };
 		FB8B127E2365B19F0019F59D /* PSISGAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B127D2365B19F0019F59D /* PSISGAppTests.swift */; };
+		FB8B12952365BC8B0019F59D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B12942365BC8B0019F59D /* APIService.swift */; };
+		FB8B12982365BCA80019F59D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B12972365BCA80019F59D /* Router.swift */; };
+		FB8B129B2365BCF90019F59D /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B129A2365BCF90019F59D /* Date+Extension.swift */; };
+		FB8B129D2365C49E0019F59D /* RouterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B129C2365C49E0019F59D /* RouterSpec.swift */; };
+		FB8B12A32365CF750019F59D /* APIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8B12A22365CF750019F59D /* APIServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		FB8B12792365B19F0019F59D /* PSISGAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PSISGAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB8B127D2365B19F0019F59D /* PSISGAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSISGAppTests.swift; sourceTree = "<group>"; };
 		FB8B127F2365B1A00019F59D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB8B12942365BC8B0019F59D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		FB8B12972365BCA80019F59D /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		FB8B129A2365BCF90019F59D /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		FB8B129C2365C49E0019F59D /* RouterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterSpec.swift; sourceTree = "<group>"; };
+		FB8B12A22365CF750019F59D /* APIServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				FB8B12682365B18A0019F59D /* AppDelegate.swift */,
+				FB8B12992365BCD70019F59D /* Extension */,
 				FB8B12892365B49C0019F59D /* APIManager */,
 				FB8B12882365B4830019F59D /* Modules */,
 				FB8B126C2365B18A0019F59D /* Main.storyboard */,
@@ -133,6 +144,8 @@
 		FB8B12892365B49C0019F59D /* APIManager */ = {
 			isa = PBXGroup;
 			children = (
+				FB8B12942365BC8B0019F59D /* APIService.swift */,
+				FB8B12972365BCA80019F59D /* Router.swift */,
 			);
 			path = APIManager;
 			sourceTree = "<group>";
@@ -150,6 +163,8 @@
 		FB8B128B2365B4D10019F59D /* APIManager */ = {
 			isa = PBXGroup;
 			children = (
+				FB8B129C2365C49E0019F59D /* RouterSpec.swift */,
+				FB8B12A22365CF750019F59D /* APIServiceTests.swift */,
 			);
 			path = APIManager;
 			sourceTree = "<group>";
@@ -213,6 +228,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		FB8B12992365BCD70019F59D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FB8B129A2365BCF90019F59D /* Date+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		FDF88F8C83F936FCE8783C46 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,7 +244,6 @@
 				2A45311CFB3AE3A824E97CAF /* Pods-PSISGAppTests.debug.xcconfig */,
 				3048242EECDFFC5376F7AF19 /* Pods-PSISGAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -411,7 +433,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB8B129B2365BCF90019F59D /* Date+Extension.swift in Sources */,
+				FB8B12982365BCA80019F59D /* Router.swift in Sources */,
 				FB8B126B2365B18A0019F59D /* PSIMapViewController.swift in Sources */,
+				FB8B12952365BC8B0019F59D /* APIService.swift in Sources */,
 				FB8B12692365B18A0019F59D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,7 +445,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB8B12A32365CF750019F59D /* APIServiceTests.swift in Sources */,
 				FB8B127E2365B19F0019F59D /* PSISGAppTests.swift in Sources */,
+				FB8B129D2365C49E0019F59D /* RouterSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
